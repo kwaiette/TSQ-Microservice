@@ -9,3 +9,5 @@ RUN apk update && apk upgrade && \
 
 RUN mkdir -p /data/db && \
 	chown -R mongodb /data/db
+
+RUN mongodb --version
